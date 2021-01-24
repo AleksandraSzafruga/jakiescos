@@ -1,5 +1,7 @@
 package pl.sda.javalondek4.java_demo.optional.java7;
 
+import java.util.Optional;
+
 public class ComputerUtils {
 
     private ComputerUtils() {
@@ -24,9 +26,15 @@ public class ComputerUtils {
         return result;
     }
 
-
+    public static String getGCModelJava8(Computer computer){
+       return Optional.ofNullable(computer)
+                .map(comp -> comp.getGraphicCard())
+                .map(graphicCard -> graphicCard.getModel())
+                .orElse("no model");
+    }
     public static void main(String[] args) {
 
+        Computer nullComputer = null;
         Computer withoutGraphicCard = new Computer(null);
         Computer withUnknownModel = new Computer(new GraphicCard(null));
         Computer personalComputer = new Computer(new GraphicCard("nVidia"));
