@@ -12,7 +12,7 @@ Git - good practices
     * feature branch - powinien startować od develop'a i do niego finalnie zostać zmergowany
 * usuwanie branch'y
   * zmergowany branch można usunąć
-  * nie powinniśmy usuwać nie zmergowanych branch'y
+  * nie powinniśmy usuwać nie zmergowanych branch'y bo nie będziemy mieli możliwości powrotu
   * nie usuwamy branch'a na którym aktualnie się znajdujemy:)
 
 Git - przydatne komendy
