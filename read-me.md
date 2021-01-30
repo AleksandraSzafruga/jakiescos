@@ -9,9 +9,10 @@ Git - good practices
     * develop - branch developerski
     * feature branch - branch do rozwoju funkcjonalności
     * feature branch - powinien startować od develop'a i do niego finalnie zostać zmergowany
+    * przed mergem brancha featur'owego do jednego z głównych [develop/master] najpier zmerguj do obecnego [wymuszony commit mergujący]
+        *później na głownym branchu możemy zmergować ten featur'owy za pomocą fast forward
 * branch
-    * własny branch nie musi być idealny (może nie działać, zawierać komentarze FIXME/TODO), 
-    ale wysłanie merg requesta z tego brancha musi zawierać idealny kod 
+    * własny branch nie musi być idealny (może nie działać, zawierać komentarze FIXME/TODO),ale wysłanie merg requesta z tego brancha musi zawierać idealny kod 
     * usuwanie branch'y
       * zmergowany branch można usunąć
       * nie powinniśmy usuwać nie zmergowanych branch'y bo nie będziemy mieli możliwości powrotu
