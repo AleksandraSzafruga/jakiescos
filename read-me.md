@@ -4,19 +4,21 @@ Git - good practices
 * commit powinien zawierać jedną zmianę
 * zmiana opisu tylko dla ostatniego commita (amend)
 * podróżuj po historii i branchach tylko przy czystym drzewie roboczym
-* zmergowany branch można usunąć
 * git flow
     * master - branch realese'owy
     * develop - branch developerski
     * feature branch - branch do rozwoju funkcjonalności
     * feature branch - powinien startować od develop'a i do niego finalnie zostać zmergowany
-* usuwanie branch'y
-  * zmergowany branch można usunąć
-  * nie powinniśmy usuwać nie zmergowanych branch'y bo nie będziemy mieli możliwości powrotu
-  * nie usuwamy branch'a na którym aktualnie się znajdujemy:)
 * branch
-  * własny branch nie musi być idealny (może nie działać, zawierać komentarze FIXME/TODO), 
+    * własny branch nie musi być idealny (może nie działać, zawierać komentarze FIXME/TODO), 
     ale wysłanie merg requesta z tego brancha musi zawierać idealny kod 
+    * usuwanie branch'y
+      * zmergowany branch można usunąć
+      * nie powinniśmy usuwać nie zmergowanych branch'y bo nie będziemy mieli możliwości powrotu
+      * nie usuwamy branch'a na którym aktualnie się znajdujemy:)
+    * mergowanie      
+      * fast forward nie zawsze jest możliwy - działa tylko w przypadku gdy jeden branch może "dogonić" drugi
+      * zawsze można wymusić commit mergujący
 
 Git - przydatne komendy
 git status
