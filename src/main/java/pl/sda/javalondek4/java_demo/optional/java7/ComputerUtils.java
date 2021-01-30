@@ -32,6 +32,13 @@ public class ComputerUtils {
                 .map(graphicCard -> graphicCard.getModel())
                 .orElse("no model");
     }
+
+    public static String getGCModelJava8WithVar(Computer computer){
+
+
+        return "";
+    }
+
     public static void main(String[] args) {
 
         Computer nullComputer = null;

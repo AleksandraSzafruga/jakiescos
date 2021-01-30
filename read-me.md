@@ -14,6 +14,9 @@ Git - good practices
   * zmergowany branch można usunąć
   * nie powinniśmy usuwać nie zmergowanych branch'y bo nie będziemy mieli możliwości powrotu
   * nie usuwamy branch'a na którym aktualnie się znajdujemy:)
+* branch
+  * własny branch nie musi być idealny (może nie działać, zawierać komentarze FIXME/TODO), 
+    ale wysłanie merg requesta z tego brancha musi zawierać idealny kod 
 
 Git - przydatne komendy
 git status
